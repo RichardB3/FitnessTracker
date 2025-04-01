@@ -1,4 +1,4 @@
+import java.awt.*;
 
-public class Fitness {
-
+public abstact class Fitness {
 }
