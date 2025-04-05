@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public abstract class User {
+public class User {
 	  private String name;
 	  private int age;
 	  private double weight;
