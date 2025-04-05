@@ -19,6 +19,15 @@ class FitnessGUI extends JFrame{
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setLayout(new BorderLayout());
 
+    JPanel Navigator = new JPanel();
+    JButton WorkoutButton = new JButton("Log Workout");
+    JButton GoalButton = new JButton("Set Goal");
+    JButton ProgressButton = new JButton("View Progress");
+
+    Navigator.add(WorkoutButton);
+    Navigator.add(GoalButton);
+    Navigator.add(ProgressButton);
+    
     setVisible(true);
   }
 }
