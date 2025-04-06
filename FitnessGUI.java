@@ -22,6 +22,8 @@ public class FitnessGUI extends JFrame{
     Navigator.add(WorkoutButton);
     Navigator.add(GoalButton);
     Navigator.add(ProgressButton);
+
+    add(Navigator, BorderLayout.NORTH);
     
     setVisible(true);
   }
