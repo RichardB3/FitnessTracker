@@ -7,7 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/setup-java@v4.7.0
-    - name: Setup output directory.
     - run: mkdir ./out/
-    - name: Compile files
     - run: javac -cp ./out/ *.java
