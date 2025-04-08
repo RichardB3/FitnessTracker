@@ -3,9 +3,11 @@ on:
   workflow_dispatch:
 jobs:
   compile:
+    name: Test compile
     runs-on: ubuntu-latest
     steps:
-    - name: Test compile
     - uses: actions/setup-java@v4.7.0
+    - name: Setup output directory.
     - run: mkdir ./out/
+    - name: Compile files
     - run: javac -cp ./out/ *.java
