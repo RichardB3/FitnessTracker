@@ -1,9 +1,9 @@
-name: Manual workflow
+name: Verify that the app compiles
 on:
-  workflow_dispatch:
+  [push, pull_request]
 jobs:
   compile:
-    name: Test compile
+    name: Compile
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
