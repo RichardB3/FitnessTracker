@@ -5,9 +5,7 @@ jobs:
   compile:
     runs-on: ubuntu-latest
     steps:
-    - name: Setup Java JDK
-      uses: actions/setup-java@v4.7.0
-    - name: Create output directory
-      run: mkdir ./out/
-    - name: Try to compile
-      run: javac -cp ./out/ *.java
+    - name: Test compile
+    - uses: actions/setup-java@v4.7.0
+    - run: mkdir ./out/
+    - run: javac -cp ./out/ *.java
